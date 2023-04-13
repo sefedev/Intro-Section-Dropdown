@@ -209,13 +209,13 @@ const App = () => {
       {/* END OF SIDE BAR */}
 
       <div className="bg-almostWhite h-screen">
-        <header className="flex  justify-between px-10 py-4 mb-10">
+        <header className="flex  justify-between items-center px-10 py-4 mb-10">
           <h1 className="text-xl font-semibold">Snap</h1>
           <Navbar isMobile={isMobile} handleMenuClick={handleMenuClick} />
         </header>
 
-        <main className="flex sm:flex-col-reverse px-14 sm:px-0">
-          <section className="pt-16 px-20 sm:px-6">
+        <main className="flex sm:flex-col-reverse mx-14 sm:mx-0">
+          <section className="pt-16 px-20 sm:px-6 w-1/2">
             <h1 className="text-6xl font-extrabold mb-10">
               Make <br />
               remote work
@@ -224,7 +224,7 @@ const App = () => {
               Get your team in sync, no matter the location. Streamline process,
               create team rituals, and watch productivity soar.
             </p>
-            <button className="bg-almostBlack text-almostWhite rounded-lg px-6 py-4 mb-10">
+            <button className="bg-almostBlack text-almostWhite border-2 rounded-lg hover:border-almostBlack hover:bg-almostWhite hover:text-almostBlack transition duration-300 px-6 py-4 mb-10">
               Learn more
             </button>
             <span className="flex justify-between">
@@ -256,11 +256,11 @@ const App = () => {
             </span>
           </section>
 
-          <section className="overflow-hidden sm:px-6">
+          <section className="flex justify-end overflow-hidden sm:px-6 w-1/2">
             <img
               src="/images/image-hero-desktop.png"
               alt="desktop"
-              className="object-cover"
+              width="70%"
             />
           </section>
         </main>
@@ -270,8 +270,3 @@ const App = () => {
 };
 
 export default App;
-
-{
-  /* <div className=" bg-zinc absolute bg-opacity-60 z-10 w-full h-full" onClick={handleClick}>
-<div className="bg-offWhite absolute inset-x-48 h-screen w-1/2 z-50 pt-4 px-6 "> */
-}

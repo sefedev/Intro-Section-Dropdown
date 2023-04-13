@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ isMobile, handleMenuClick }) => {
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between w-full">
       <div className="flex justify-between items-center w-full">
         {isMobile ? (
           <>
@@ -19,7 +19,7 @@ const Navbar = ({ isMobile, handleMenuClick }) => {
             
              
               <ul className="flex justify-between items-center text-mediumGray text-sm ml-16">
-                <li className="mr-5">
+                <li className="mr-10">
                   <a
                     href="#"
                     alt=""
@@ -41,7 +41,7 @@ const Navbar = ({ isMobile, handleMenuClick }) => {
                     </svg>
                   </a>
                 </li>
-                <li className="mr-5">
+                <li className="mr-10">
                   <a
                     href="#"
                     alt=""
@@ -63,7 +63,7 @@ const Navbar = ({ isMobile, handleMenuClick }) => {
                     </svg>
                   </a>
                 </li>
-                <li className="mr-5">
+                <li className="mr-10">
                   <a
                     href="#"
                     alt=""
@@ -72,7 +72,7 @@ const Navbar = ({ isMobile, handleMenuClick }) => {
                     Career
                   </a>
                 </li>
-                <li className="mr-5">
+                <li className="mr-10">
                   <a
                     href="#"
                     alt=""
